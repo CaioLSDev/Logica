@@ -28,15 +28,15 @@
     <h1>Evento Confirmado</h1>
     <p>Anote o seu código de entrada:</p>
     <script>
-        var idade = window.prompt 
-        ("Bem vindo ao sistema, para começar por favor digite a sua idade")
+        var idade = parseInt(window.prompt
+        ("Bem vindo ao sistema, para começar por favor digite a sua idade"))
         if (idade >= 18) window.confirm 
         ("Muito bem, clique para continuar")
         else (idade < 18), window.alert 
         ("Desculpe, idade não permitida")
         
-        var data = window.prompt 
-        ("agora digite a data do evento que deseja participar, apenas os 8 digitos DDMMAAAA")
+        var data = parseInt(window.prompt 
+        ("agora digite a data do evento que deseja participar, apenas os 8 digitos DDMMAAAA"))
         if (data >250622) window.confirm 
         ("Evento Aberto! Por favor confirme para continuar")
         else (data <=250622), window.alert 
