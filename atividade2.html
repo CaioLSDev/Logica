@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: rgb(157, 238, 155);
+        }
+        h1 {
+            color: rgb(62, 176, 49);
+            font-size: 25px;
+            padding: 20px;
+            background-color: rgb(44, 44, 44);
+        }
+        p {
+            color: white;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Evento Confirmado</h1>
+    <p>Anote o seu código de entrada:</p>
+    <script>
+        var idade = window.prompt 
+        ("Bem vindo ao sistema, para começar por favor digite a sua idade")
+        if (idade >= 18) window.confirm 
+        ("Muito bem, clique para continuar")
+        else (idade < 18), window.alert 
+        ("Desculpe, idade não permitida")
+        
+        var data = window.prompt 
+        ("agora digite a data do evento que deseja participar, apenas os 8 digitos DDMMAAAA")
+        if (data >250622) window.confirm 
+        ("Evento Aberto! Por favor confirme para continuar")
+        else (data <=250622), window.alert 
+        ("Data invalida, por favor tente novamente")
+
+        var pales = parseInt(window.prompt 
+        ("Quantos palestrantes deseja convidar para o evento?"))
+        var convi = parseInt(window.prompt 
+        ("Quantos convidados deseja acrescentar para o evento?"))
+        var total = pales + convi 
+        if (total <= 100) window.confirm 
+        ("Evento Confirmado!"), document.write (idade + data + total);
+        else (total > 100), window.confirm 
+        ("O numero de participantes excede o total de cadeiras disponíveis, evento cancelado: recarregue a pagina e tente novamente") 
+    </script>
+</body>
+</html>
